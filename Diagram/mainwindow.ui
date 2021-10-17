@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1495</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Graphs</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>211</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>189</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab1">
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1495</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Graph">
+    <property name="title">
+     <string>График</string>
+    </property>
+    <widget class="QMenu" name="Inductance_graph">
+     <property name="title">
+      <string>Добавить график индуктивности</string>
+     </property>
+     <addaction name="actionL_N"/>
+     <addaction name="actionL_nu"/>
+     <addaction name="actionL_R"/>
+     <addaction name="actionL_r"/>
+     <addaction name="actionL_h"/>
+    </widget>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>Добавить график числа Дина</string>
+     </property>
+     <addaction name="actionDe_p"/>
+     <addaction name="actionDe_D"/>
+     <addaction name="actionDe_v"/>
+     <addaction name="actionDe_nu"/>
+     <addaction name="actionDe_r"/>
+    </widget>
+    <addaction name="Inductance_graph"/>
+    <addaction name="menu"/>
+   </widget>
+   <widget class="QMenu" name="Calculator">
+    <property name="title">
+     <string>Калькулятор</string>
+    </property>
+    <addaction name="Inductance_calculator"/>
+    <addaction name="Dean_number_calculator"/>
+   </widget>
+   <widget class="QMenu" name="View">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="actCascade"/>
+    <addaction name="actTile"/>
+   </widget>
+   <addaction name="Graph"/>
+   <addaction name="Calculator"/>
+   <addaction name="View"/>
+  </widget>
+  <action name="Inductance_calculator">
+   <property name="text">
+    <string>Индуктивность</string>
+   </property>
+  </action>
+  <action name="Dean_number_calculator">
+   <property name="text">
+    <string>Число Дина</string>
+   </property>
+  </action>
+  <action name="actionL_N">
+   <property name="text">
+    <string>L от N</string>
+   </property>
+  </action>
+  <action name="actionL_nu">
+   <property name="text">
+    <string>L от µ</string>
+   </property>
+  </action>
+  <action name="actionL_R">
+   <property name="text">
+    <string>L от R</string>
+   </property>
+  </action>
+  <action name="actionL_r">
+   <property name="text">
+    <string>L от r</string>
+   </property>
+  </action>
+  <action name="actionL_h">
+   <property name="text">
+    <string>L от h</string>
+   </property>
+  </action>
+  <action name="actiontest">
+   <property name="text">
+    <string>test</string>
+   </property>
+  </action>
+  <action name="actionDe_p">
+   <property name="text">
+    <string>De от p</string>
+   </property>
+  </action>
+  <action name="actionDe_D">
+   <property name="text">
+    <string>De от D</string>
+   </property>
+  </action>
+  <action name="actionDe_v">
+   <property name="text">
+    <string>De от v</string>
+   </property>
+  </action>
+  <action name="actionDe_nu">
+   <property name="text">
+    <string>De от μ</string>
+   </property>
+  </action>
+  <action name="actionDe_r">
+   <property name="text">
+    <string>De от r</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>тест</string>
+   </property>
+  </action>
+  <action name="actiontest_2">
+   <property name="text">
+    <string>test</string>
+   </property>
+  </action>
+  <action name="actCascade">
+   <property name="text">
+    <string>Каскад</string>
+   </property>
+  </action>
+  <action name="actTile">
+   <property name="text">
+    <string>Плитка</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
