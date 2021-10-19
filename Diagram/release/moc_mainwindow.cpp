@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[18];
-    char stringdata0[396];
+    char stringdata0[406];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,25 +37,25 @@ QT_MOC_LITERAL(1, 11, 22), // "signal_inductance_menu"
 QT_MOC_LITERAL(2, 34, 0), // ""
 QT_MOC_LITERAL(3, 35, 35), // "on_Dean_number_calculator_tri..."
 QT_MOC_LITERAL(4, 71, 34), // "on_Inductance_calculator_trig..."
-QT_MOC_LITERAL(5, 106, 7), // "add_tab"
-QT_MOC_LITERAL(6, 114, 22), // "on_actionL_N_triggered"
-QT_MOC_LITERAL(7, 137, 23), // "on_actionL_nu_triggered"
-QT_MOC_LITERAL(8, 161, 22), // "on_actionL_R_triggered"
-QT_MOC_LITERAL(9, 184, 22), // "on_actionL_r_triggered"
-QT_MOC_LITERAL(10, 207, 22), // "on_actionL_h_triggered"
-QT_MOC_LITERAL(11, 230, 23), // "on_actionDe_r_triggered"
-QT_MOC_LITERAL(12, 254, 23), // "on_actionDe_p_triggered"
-QT_MOC_LITERAL(13, 278, 23), // "on_actionDe_D_triggered"
-QT_MOC_LITERAL(14, 302, 23), // "on_actionDe_v_triggered"
-QT_MOC_LITERAL(15, 326, 24), // "on_actionDe_nu_triggered"
-QT_MOC_LITERAL(16, 351, 23), // "on_actCascade_triggered"
-QT_MOC_LITERAL(17, 375, 20) // "on_actTile_triggered"
+QT_MOC_LITERAL(5, 106, 17), // "add_tab_and_grapf"
+QT_MOC_LITERAL(6, 124, 22), // "on_actionL_N_triggered"
+QT_MOC_LITERAL(7, 147, 23), // "on_actionL_nu_triggered"
+QT_MOC_LITERAL(8, 171, 22), // "on_actionL_R_triggered"
+QT_MOC_LITERAL(9, 194, 22), // "on_actionL_r_triggered"
+QT_MOC_LITERAL(10, 217, 22), // "on_actionL_h_triggered"
+QT_MOC_LITERAL(11, 240, 23), // "on_actionDe_r_triggered"
+QT_MOC_LITERAL(12, 264, 23), // "on_actionDe_p_triggered"
+QT_MOC_LITERAL(13, 288, 23), // "on_actionDe_D_triggered"
+QT_MOC_LITERAL(14, 312, 23), // "on_actionDe_v_triggered"
+QT_MOC_LITERAL(15, 336, 24), // "on_actionDe_nu_triggered"
+QT_MOC_LITERAL(16, 361, 23), // "on_actCascade_triggered"
+QT_MOC_LITERAL(17, 385, 20) // "on_actTile_triggered"
 
     },
     "MainWindow\0signal_inductance_menu\0\0"
     "on_Dean_number_calculator_triggered\0"
     "on_Inductance_calculator_triggered\0"
-    "add_tab\0on_actionL_N_triggered\0"
+    "add_tab_and_grapf\0on_actionL_N_triggered\0"
     "on_actionL_nu_triggered\0on_actionL_R_triggered\0"
     "on_actionL_r_triggered\0on_actionL_h_triggered\0"
     "on_actionDe_r_triggered\0on_actionDe_p_triggered\0"
@@ -90,12 +90,12 @@ static const uint qt_meta_data_MainWindow[] = {
        8,    0,  100,    2, 0x0a /* Public */,
        9,    0,  101,    2, 0x0a /* Public */,
       10,    0,  102,    2, 0x0a /* Public */,
-      11,    0,  103,    2, 0x08 /* Private */,
-      12,    0,  104,    2, 0x08 /* Private */,
-      13,    0,  105,    2, 0x08 /* Private */,
-      14,    0,  106,    2, 0x08 /* Private */,
-      15,    0,  107,    2, 0x08 /* Private */,
-      16,    0,  108,    2, 0x08 /* Private */,
+      11,    0,  103,    2, 0x0a /* Public */,
+      12,    0,  104,    2, 0x0a /* Public */,
+      13,    0,  105,    2, 0x0a /* Public */,
+      14,    0,  106,    2, 0x0a /* Public */,
+      15,    0,  107,    2, 0x0a /* Public */,
+      16,    0,  108,    2, 0x0a /* Public */,
       17,    0,  109,    2, 0x08 /* Private */,
 
  // signals: parameters
@@ -130,7 +130,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->signal_inductance_menu(); break;
         case 1: _t->on_Dean_number_calculator_triggered(); break;
         case 2: _t->on_Inductance_calculator_triggered(); break;
-        case 3: _t->add_tab(); break;
+        case 3: _t->add_tab_and_grapf(); break;
         case 4: _t->on_actionL_N_triggered(); break;
         case 5: _t->on_actionL_nu_triggered(); break;
         case 6: _t->on_actionL_R_triggered(); break;

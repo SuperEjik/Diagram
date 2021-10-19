@@ -1,5 +1,5 @@
 debug/calculation.o
-debug/dean_flow.o
+debug/dean_flow_calculation.o
 debug/dean_menu.o
 debug/diagram_window.o
 debug/draw_de_d.o
@@ -19,7 +19,7 @@ debug/mainwindow.o
 debug/qcustomplot.o
 debug/testform.o
 debug/qrc_qmake_qmake_qm_files.o
-debug/moc_dean_flow.o
+debug/moc_dean_flow_calculation.o
 debug/moc_dean_menu.o
 debug/moc_diagram_window.o
 debug/moc_draw_de_d.o

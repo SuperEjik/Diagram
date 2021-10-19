@@ -16,8 +16,6 @@ public:
     explicit Draw_De_v(QWidget *parent = nullptr);
     ~Draw_De_v();
 
-    void draw_graph(double, double);
-
 private:
     Ui::Draw_De_v *ui;
 };

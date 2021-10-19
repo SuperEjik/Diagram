@@ -21,7 +21,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_dean_flow
+class Ui_dean_flow_calculation
 {
 public:
     QTextBrowser *text_De;
@@ -215,7 +215,7 @@ public:
 };
 
 namespace Ui {
-    class dean_flow: public Ui_dean_flow {};
+    class dean_flow_calculation public Ui_dean_flow_calculation {};
 } // namespace Ui
 
 QT_END_NAMESPACE

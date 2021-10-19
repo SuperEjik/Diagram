@@ -10,7 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     calculation.cpp \
-    dean_flow.cpp \
+    dean_flow_calculation.cpp \
     dean_menu.cpp \
     diagram_window.cpp \
     draw_de_d.cpp \
@@ -32,7 +32,7 @@ SOURCES += \
 
 HEADERS += \
     calculation.h \
-    dean_flow.h \
+    dean_flow_calculation.h \
     dean_menu.h \
     diagram_window.h \
     draw_de_d.h \
@@ -52,7 +52,7 @@ HEADERS += \
     testform.h
 
 FORMS += \
-    dean_flow.ui \
+    dean_flow_calculation.ui \
     dean_menu.ui \
     diagram_window.ui \
     draw_de_d.ui \

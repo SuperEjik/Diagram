@@ -37,7 +37,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Dean_number_calculator_triggered()
 {
-    Dean = new dean_flow();
+    Dean = new dean_flow_calculation();
     Dean->show();
 }
 
@@ -54,6 +54,8 @@ void MainWindow::add_tab_and_grapf()
 
     if (button == ui->actionL_N || button == ui->actionL_R || button == ui->actionL_h || button == ui->actionL_nu || button == ui->actionL_r)
     {
+        Y_axis_name = 'L';
+
         if(inductance_tab == false)
         {
             inductance_tab = true;
@@ -148,6 +150,8 @@ void MainWindow::add_tab_and_grapf()
 
     else if(button == ui->actionDe_D || button == ui->actionDe_p || button == ui->actionDe_r || button == ui->actionDe_v || button == ui->actionDe_nu)
     {
+        Y_axis_name = "De";
+
         if(Dean_flow_tab == false)
         {
             Dean_flow_tab = true;
@@ -249,7 +253,7 @@ void MainWindow::loadSubWindows(QWidget *widget)
     window->setWindowIcon(widget->windowIcon());
 
     // Устанавливаем заголовок окна
-    window->setWindowTitle("Диаграмма " + QString(widget->objectName()));
+    window->setWindowTitle("Диаграмма " + QString(Y_axis_name) + " от " + QString(X_axis_name));
 
     window->show();
 
@@ -260,7 +264,7 @@ void MainWindow::loadSubWindows(QWidget *widget)
 void MainWindow::on_actionL_N_triggered()
 {
     X = 10;
-
+    X_axis_name = 'N';
     add_tab_and_grapf();
 }
 
@@ -268,7 +272,7 @@ void MainWindow::on_actionL_N_triggered()
 void MainWindow::on_actionL_nu_triggered()
 {
     X = 11;
-
+    X_axis_name = 'u';
     add_tab_and_grapf();
 }
 
@@ -276,7 +280,7 @@ void MainWindow::on_actionL_nu_triggered()
 void MainWindow::on_actionL_R_triggered()
 {
     X = 12;
-
+    X_axis_name = 'R';
     add_tab_and_grapf();
 }
 
@@ -284,7 +288,7 @@ void MainWindow::on_actionL_R_triggered()
 void MainWindow::on_actionL_r_triggered()
 {
     X = 13;
-
+    X_axis_name = 'r';
     add_tab_and_grapf();
 }
 
@@ -292,21 +296,21 @@ void MainWindow::on_actionL_r_triggered()
 void MainWindow::on_actionL_h_triggered()
 {
     X = 14;
-
+    X_axis_name = 'h';
     add_tab_and_grapf();
 }
 
 void MainWindow::on_actionDe_p_triggered()
 {
     X = 20;
-
+    X_axis_name = 'p';
     add_tab_and_grapf();
 }
 
 void MainWindow::on_actionDe_r_triggered()
 {
     X = 21;
-
+    X_axis_name = 'r';
     add_tab_and_grapf();
 }
 
@@ -314,7 +318,7 @@ void MainWindow::on_actionDe_r_triggered()
 void MainWindow::on_actionDe_D_triggered()
 {
     X = 22;
-
+    X_axis_name = 'D';
     add_tab_and_grapf();
 }
 
@@ -322,7 +326,7 @@ void MainWindow::on_actionDe_D_triggered()
 void MainWindow::on_actionDe_v_triggered()
 {
     X = 23;
-
+    X_axis_name = 'v';
     add_tab_and_grapf();
 }
 
@@ -330,7 +334,7 @@ void MainWindow::on_actionDe_v_triggered()
 void MainWindow::on_actionDe_nu_triggered()
 {
     X = 24;
-
+    X_axis_name = 'u';
     add_tab_and_grapf();
 }
 

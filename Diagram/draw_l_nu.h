@@ -16,8 +16,6 @@ public:
     explicit Draw_L_nu(QWidget *parent = nullptr);
     ~Draw_L_nu();
 
-    void draw_graph(double, double);
-
 private:
     Ui::Draw_L_nu *ui;
 };

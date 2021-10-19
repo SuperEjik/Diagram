@@ -2,11 +2,19 @@
 #include "ui_inductance_calculation.h"
 #include "calculation.h"
 
+#include <qvalidator.h>
+
 Inductance_calculation::Inductance_calculation(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Inductance_calculation)
 {
     ui->setupUi(this);
+
+    ui->lineEdit_N->setValidator(new QRegExpValidator(QRegExp("^([1-9][0-9]*|0)(\\.|,)[0-9]{10}"), this));
+    ui->lineEdit_nu->setValidator(new QRegExpValidator(QRegExp("^([1-9][0-9]*|0)(\\.|,)[0-9]{10}"), this));
+    ui->lineEdit_h->setValidator(new QRegExpValidator(QRegExp("^([1-9][0-9]*|0)(\\.|,)[0-9]{10}"), this));
+    ui->lineEdit_R->setValidator(new QRegExpValidator(QRegExp("^([1-9][0-9]*|0)(\\.|,)[0-9]{10}"), this));
+    ui->lineEdit_r->setValidator(new QRegExpValidator(QRegExp("^([1-9][0-9]*|0)(\\.|,)[0-9]{10}"), this));
 }
 
 Inductance_calculation::~Inductance_calculation()

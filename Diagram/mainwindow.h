@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 
-#include "dean_flow.h"
+#include "dean_flow_calculation.h"
 #include "inductance_calculation.h"
 #include "inductance_menu.h"
 #include "dean_menu.h"
@@ -57,10 +57,12 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
-    dean_flow *Dean;
+    dean_flow_calculation *Dean;
     Inductance_calculation *inductance;
 
     int X;
+    QString Y_axis_name;
+    char X_axis_name;
     bool first_tab, inductance_tab, Dean_flow_tab;
 
     QPointer<Draw_L_N> L_N_diagram;

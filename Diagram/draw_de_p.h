@@ -16,8 +16,6 @@ public:
     explicit Draw_De_p(QWidget *parent = nullptr);
     ~Draw_De_p();
 
-    void draw_graph(double, double);
-
 private:
     Ui::Draw_De_p *ui;
 };

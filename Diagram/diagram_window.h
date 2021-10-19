@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QVector>
+#include <qcustomplot.h>
 
 namespace Ui {
 class diagram_window;
@@ -19,6 +20,13 @@ public:
     void draw_graph(double, double);
 
     QVector<double> x,y;
+
+    double start_x;
+    double start_y;
+    bool first;
+
+    QCustomPlot* diagram_name;
+
 
 private:
     Ui::diagram_window *ui;
