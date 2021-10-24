@@ -64,6 +64,7 @@ private:
     QString Y_axis_name;
     char X_axis_name;
     bool first_tab, inductance_tab, Dean_flow_tab;
+    bool title_view;
 
     QPointer<Draw_L_N> L_N_diagram;
     QPointer<Draw_L_nu> L_nu_diagram;

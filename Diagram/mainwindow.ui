@@ -82,16 +82,6 @@
     <property name="title">
      <string>График</string>
     </property>
-    <widget class="QMenu" name="Inductance_graph">
-     <property name="title">
-      <string>Добавить график индуктивности</string>
-     </property>
-     <addaction name="actionL_N"/>
-     <addaction name="actionL_nu"/>
-     <addaction name="actionL_R"/>
-     <addaction name="actionL_r"/>
-     <addaction name="actionL_h"/>
-    </widget>
     <widget class="QMenu" name="menu">
      <property name="title">
       <string>Добавить график числа Дина</string>
@@ -102,14 +92,12 @@
      <addaction name="actionDe_nu"/>
      <addaction name="actionDe_r"/>
     </widget>
-    <addaction name="Inductance_graph"/>
     <addaction name="menu"/>
    </widget>
    <widget class="QMenu" name="Calculator">
     <property name="title">
      <string>Калькулятор</string>
     </property>
-    <addaction name="Inductance_calculator"/>
     <addaction name="Dean_number_calculator"/>
    </widget>
    <widget class="QMenu" name="View">

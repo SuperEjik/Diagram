@@ -21,9 +21,10 @@ public:
 
     QVector<double> x,y;
 
-    double start_x;
-    double start_y;
+    double start_x, start_y, max_x, max_y;
     bool first;
+
+    int i;
 
     QCustomPlot* diagram_name;
 

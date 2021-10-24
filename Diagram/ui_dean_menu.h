@@ -14,6 +14,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSplitter>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
@@ -34,13 +35,15 @@ public:
     QLineEdit *lineEdit_D;
     QLabel *label_p;
     QLineEdit *lineEdit_r;
+    QSplitter *splitter;
     QPushButton *calculation_Dean;
+    QPushButton *Value_delete;
 
     void setupUi(QWidget *dean_menu)
     {
         if (dean_menu->objectName().isEmpty())
             dean_menu->setObjectName(QString::fromUtf8("dean_menu"));
-        dean_menu->resize(186, 251);
+        dean_menu->resize(186, 350);
         lineEdit_v = new QLineEdit(dean_menu);
         lineEdit_v->setObjectName(QString::fromUtf8("lineEdit_v"));
         lineEdit_v->setGeometry(QRect(49, 77, 131, 27));
@@ -95,9 +98,16 @@ public:
         lineEdit_r->setObjectName(QString::fromUtf8("lineEdit_r"));
         lineEdit_r->setGeometry(QRect(49, 143, 131, 27));
         lineEdit_r->setFont(font);
-        calculation_Dean = new QPushButton(dean_menu);
+        splitter = new QSplitter(dean_menu);
+        splitter->setObjectName(QString::fromUtf8("splitter"));
+        splitter->setGeometry(QRect(49, 210, 131, 61));
+        splitter->setOrientation(Qt::Vertical);
+        calculation_Dean = new QPushButton(splitter);
         calculation_Dean->setObjectName(QString::fromUtf8("calculation_Dean"));
-        calculation_Dean->setGeometry(QRect(49, 210, 131, 27));
+        splitter->addWidget(calculation_Dean);
+        Value_delete = new QPushButton(splitter);
+        Value_delete->setObjectName(QString::fromUtf8("Value_delete"));
+        splitter->addWidget(Value_delete);
 
         retranslateUi(dean_menu);
 
@@ -114,6 +124,7 @@ public:
         label_r->setText(QCoreApplication::translate("dean_menu", "r = ", nullptr));
         label_p->setText(QCoreApplication::translate("dean_menu", "p =", nullptr));
         calculation_Dean->setText(QCoreApplication::translate("dean_menu", "\320\237\320\276\321\201\321\202\321\200\320\276\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272", nullptr));
+        Value_delete->setText(QCoreApplication::translate("dean_menu", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\267\320\275\320\260\321\207\320\265\320\275\320\270\321\217", nullptr));
     } // retranslateUi
 
 };

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>186</width>
-    <height>251</height>
+    <height>350</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -220,18 +220,28 @@
     </font>
    </property>
   </widget>
-  <widget class="QPushButton" name="calculation_Dean">
+  <widget class="QSplitter" name="splitter">
    <property name="geometry">
     <rect>
      <x>49</x>
      <y>210</y>
      <width>131</width>
-     <height>27</height>
+     <height>61</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Построить график</string>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
    </property>
+   <widget class="QPushButton" name="calculation_Dean">
+    <property name="text">
+     <string>Построить график</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Value_delete">
+    <property name="text">
+     <string>Удалить значения</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

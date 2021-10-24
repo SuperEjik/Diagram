@@ -28,6 +28,7 @@ signals:
     void signal_De_v(double, double);
 private slots:
     void on_calculation_Dean_clicked();
+    void on_Value_delete_clicked();
 };
 
 #endif // DEAN_MENU_H

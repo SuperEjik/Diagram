@@ -13153,6 +13153,8 @@ debug/dean_menu.o: dean_menu.cpp dean_menu.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtGui/qicon.h \
+		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/QSplitter \
+		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/qsplitter.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/QTextEdit \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/qtextedit.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
@@ -13168,7 +13170,9 @@ debug/dean_menu.o: dean_menu.cpp dean_menu.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/QMdiArea \
 		../../Qt/program/5.14.2/mingw73_64/include/QtWidgets/qmdiarea.h \
 		../../Qt/program/5.14.2/mingw73_64/include/QtCore/QPointer \
-		../../Qt/program/5.14.2/mingw73_64/include/QtCore/qpointer.h
+		../../Qt/program/5.14.2/mingw73_64/include/QtCore/qpointer.h \
+		../../Qt/program/5.14.2/mingw73_64/include/QtGui/qvalidator.h \
+		../../Qt/program/5.14.2/mingw73_64/include/QtCore/qregularexpression.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\dean_menu.o dean_menu.cpp
 
 debug/diagram_window.o: diagram_window.cpp diagram_window.h \

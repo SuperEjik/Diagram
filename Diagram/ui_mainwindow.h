@@ -49,7 +49,6 @@ public:
     QMdiArea *mdiArea;
     QMenuBar *menubar;
     QMenu *Graph;
-    QMenu *Inductance_graph;
     QMenu *menu;
     QMenu *Calculator;
     QMenu *View;
@@ -135,8 +134,6 @@ public:
         menubar->setGeometry(QRect(0, 0, 1495, 21));
         Graph = new QMenu(menubar);
         Graph->setObjectName(QString::fromUtf8("Graph"));
-        Inductance_graph = new QMenu(Graph);
-        Inductance_graph->setObjectName(QString::fromUtf8("Inductance_graph"));
         menu = new QMenu(Graph);
         menu->setObjectName(QString::fromUtf8("menu"));
         Calculator = new QMenu(menubar);
@@ -148,19 +145,12 @@ public:
         menubar->addAction(Graph->menuAction());
         menubar->addAction(Calculator->menuAction());
         menubar->addAction(View->menuAction());
-        Graph->addAction(Inductance_graph->menuAction());
         Graph->addAction(menu->menuAction());
-        Inductance_graph->addAction(actionL_N);
-        Inductance_graph->addAction(actionL_nu);
-        Inductance_graph->addAction(actionL_R);
-        Inductance_graph->addAction(actionL_r);
-        Inductance_graph->addAction(actionL_h);
         menu->addAction(actionDe_p);
         menu->addAction(actionDe_D);
         menu->addAction(actionDe_v);
         menu->addAction(actionDe_nu);
         menu->addAction(actionDe_r);
-        Calculator->addAction(Inductance_calculator);
         Calculator->addAction(Dean_number_calculator);
         View->addAction(actCascade);
         View->addAction(actTile);
@@ -195,7 +185,6 @@ public:
         actTile->setText(QCoreApplication::translate("MainWindow", "\320\237\320\273\320\270\321\202\320\272\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab1), QString());
         Graph->setTitle(QCoreApplication::translate("MainWindow", "\320\223\321\200\320\260\321\204\320\270\320\272", nullptr));
-        Inductance_graph->setTitle(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272 \320\270\320\275\320\264\321\203\320\272\321\202\320\270\320\262\320\275\320\276\321\201\321\202\320\270", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272 \321\207\320\270\321\201\320\273\320\260 \320\224\320\270\320\275\320\260", nullptr));
         Calculator->setTitle(QCoreApplication::translate("MainWindow", "\320\232\320\260\320\273\321\214\320\272\321\203\320\273\321\217\321\202\320\276\321\200", nullptr));
         View->setTitle(QCoreApplication::translate("MainWindow", "\320\222\320\270\320\264", nullptr));

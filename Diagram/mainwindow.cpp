@@ -28,6 +28,8 @@ MainWindow::MainWindow(QWidget *parent)
     dean_m = new dean_menu();
 
     X = 0;
+
+    title_view = true;
 }
 
 MainWindow::~MainWindow()
@@ -257,9 +259,30 @@ void MainWindow::loadSubWindows(QWidget *widget)
 
     window->show();
 
-    ui->mdiArea->cascadeSubWindows();
-    ui->mdiArea->tileSubWindows();
+    //ui->mdiArea->cascadeSubWindows();
+
+    if(title_view == true)
+    {
+        ui->mdiArea->tileSubWindows();
+    }
+    else
+    {
+        ui->mdiArea->cascadeSubWindows();
+    }
 }
+
+void MainWindow::on_actCascade_triggered()//выбор расположения окон
+{
+    ui->mdiArea->cascadeSubWindows();
+    title_view = false;
+}
+
+void MainWindow::on_actTile_triggered()//выбор расположения окон
+{
+    ui->mdiArea->tileSubWindows();
+    title_view = true;
+}
+
 
 void MainWindow::on_actionL_N_triggered()
 {
@@ -336,15 +359,4 @@ void MainWindow::on_actionDe_nu_triggered()
     X = 24;
     X_axis_name = 'u';
     add_tab_and_grapf();
-}
-
-
-void MainWindow::on_actCascade_triggered()//выбор расположения окон
-{
-    ui->mdiArea->cascadeSubWindows();
-}
-
-void MainWindow::on_actTile_triggered()//выбор расположения окон
-{
-    ui->mdiArea->tileSubWindows();
 }
