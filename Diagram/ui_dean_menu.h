@@ -14,7 +14,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSplitter>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
@@ -35,15 +34,15 @@ public:
     QLineEdit *lineEdit_D;
     QLabel *label_p;
     QLineEdit *lineEdit_r;
-    QSplitter *splitter;
-    QPushButton *calculation_Dean;
+    QPushButton *add_parametrs_to_all_graphs_Dean;
     QPushButton *Value_delete;
+    QPushButton *add_parametrs_to_the_corresponding_graph_Dean;
 
     void setupUi(QWidget *dean_menu)
     {
         if (dean_menu->objectName().isEmpty())
             dean_menu->setObjectName(QString::fromUtf8("dean_menu"));
-        dean_menu->resize(186, 350);
+        dean_menu->resize(186, 359);
         lineEdit_v = new QLineEdit(dean_menu);
         lineEdit_v->setObjectName(QString::fromUtf8("lineEdit_v"));
         lineEdit_v->setGeometry(QRect(49, 77, 131, 27));
@@ -98,16 +97,15 @@ public:
         lineEdit_r->setObjectName(QString::fromUtf8("lineEdit_r"));
         lineEdit_r->setGeometry(QRect(49, 143, 131, 27));
         lineEdit_r->setFont(font);
-        splitter = new QSplitter(dean_menu);
-        splitter->setObjectName(QString::fromUtf8("splitter"));
-        splitter->setGeometry(QRect(49, 210, 131, 61));
-        splitter->setOrientation(Qt::Vertical);
-        calculation_Dean = new QPushButton(splitter);
-        calculation_Dean->setObjectName(QString::fromUtf8("calculation_Dean"));
-        splitter->addWidget(calculation_Dean);
-        Value_delete = new QPushButton(splitter);
+        add_parametrs_to_all_graphs_Dean = new QPushButton(dean_menu);
+        add_parametrs_to_all_graphs_Dean->setObjectName(QString::fromUtf8("add_parametrs_to_all_graphs_Dean"));
+        add_parametrs_to_all_graphs_Dean->setGeometry(QRect(9, 270, 171, 41));
+        Value_delete = new QPushButton(dean_menu);
         Value_delete->setObjectName(QString::fromUtf8("Value_delete"));
-        splitter->addWidget(Value_delete);
+        Value_delete->setGeometry(QRect(9, 320, 171, 23));
+        add_parametrs_to_the_corresponding_graph_Dean = new QPushButton(dean_menu);
+        add_parametrs_to_the_corresponding_graph_Dean->setObjectName(QString::fromUtf8("add_parametrs_to_the_corresponding_graph_Dean"));
+        add_parametrs_to_the_corresponding_graph_Dean->setGeometry(QRect(9, 210, 171, 51));
 
         retranslateUi(dean_menu);
 
@@ -123,8 +121,12 @@ public:
         label_De->setText(QCoreApplication::translate("dean_menu", "De = ", nullptr));
         label_r->setText(QCoreApplication::translate("dean_menu", "r = ", nullptr));
         label_p->setText(QCoreApplication::translate("dean_menu", "p =", nullptr));
-        calculation_Dean->setText(QCoreApplication::translate("dean_menu", "\320\237\320\276\321\201\321\202\321\200\320\276\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272", nullptr));
+        add_parametrs_to_all_graphs_Dean->setText(QCoreApplication::translate("dean_menu", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213 \320\262\320\276 \320\262\321\201\320\265 \n"
+"  \320\263\321\200\320\260\321\204\320\270\320\272\320\270", nullptr));
         Value_delete->setText(QCoreApplication::translate("dean_menu", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\267\320\275\320\260\321\207\320\265\320\275\320\270\321\217", nullptr));
+        add_parametrs_to_the_corresponding_graph_Dean->setText(QCoreApplication::translate("dean_menu", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213 \320\262 \n"
+" \321\201\320\276\320\276\321\202\320\262\320\265\321\202\321\201\321\202\320\262\321\203\321\216\321\211\320\270\320\271 \n"
+"  \320\263\321\200\320\260\321\204\320\270\320\272", nullptr));
     } // retranslateUi
 
 };

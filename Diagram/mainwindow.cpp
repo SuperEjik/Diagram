@@ -259,8 +259,6 @@ void MainWindow::loadSubWindows(QWidget *widget)
 
     window->show();
 
-    //ui->mdiArea->cascadeSubWindows();
-
     if(title_view == true)
     {
         ui->mdiArea->tileSubWindows();

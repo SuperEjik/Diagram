@@ -44,9 +44,9 @@ public:
     QAction *actTile;
     QWidget *centralwidget;
     QGridLayout *gridLayout;
+    QMdiArea *mdiArea;
     QTabWidget *tabWidget;
     QWidget *tab1;
-    QMdiArea *mdiArea;
     QMenuBar *menubar;
     QMenu *Graph;
     QMenu *menu;
@@ -102,14 +102,24 @@ public:
         centralwidget->setEnabled(true);
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        mdiArea = new QMdiArea(centralwidget);
+        mdiArea->setObjectName(QString::fromUtf8("mdiArea"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(mdiArea->sizePolicy().hasHeightForWidth());
+        mdiArea->setSizePolicy(sizePolicy1);
+
+        gridLayout->addWidget(mdiArea, 0, 1, 1, 1);
+
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setEnabled(true);
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(211);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
-        tabWidget->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy2.setHorizontalStretch(211);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
+        tabWidget->setSizePolicy(sizePolicy2);
         tabWidget->setMinimumSize(QSize(189, 0));
         tabWidget->setMaximumSize(QSize(191, 16777215));
         tab1 = new QWidget();
@@ -117,16 +127,6 @@ public:
         tabWidget->addTab(tab1, QString());
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
-
-        mdiArea = new QMdiArea(centralwidget);
-        mdiArea->setObjectName(QString::fromUtf8("mdiArea"));
-        QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(mdiArea->sizePolicy().hasHeightForWidth());
-        mdiArea->setSizePolicy(sizePolicy2);
-
-        gridLayout->addWidget(mdiArea, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);

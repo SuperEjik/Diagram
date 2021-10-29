@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>186</width>
-    <height>350</height>
+    <height>359</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -220,28 +220,47 @@
     </font>
    </property>
   </widget>
-  <widget class="QSplitter" name="splitter">
+  <widget class="QPushButton" name="add_parametrs_to_all_graphs_Dean">
    <property name="geometry">
     <rect>
-     <x>49</x>
-     <y>210</y>
-     <width>131</width>
-     <height>61</height>
+     <x>9</x>
+     <y>270</y>
+     <width>171</width>
+     <height>41</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
+   <property name="text">
+    <string>Добавить параметры во все 
+  графики</string>
    </property>
-   <widget class="QPushButton" name="calculation_Dean">
-    <property name="text">
-     <string>Построить график</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Value_delete">
-    <property name="text">
-     <string>Удалить значения</string>
-    </property>
-   </widget>
+  </widget>
+  <widget class="QPushButton" name="Value_delete">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>320</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Удалить значения</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_parametrs_to_the_corresponding_graph_Dean">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>210</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Добавить параметры в 
+ соответствующий 
+  график</string>
+   </property>
   </widget>
  </widget>
  <resources/>
