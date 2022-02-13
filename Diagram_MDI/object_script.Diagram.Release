@@ -1,6 +1,12 @@
 release/calculation.o
 release/dean_flow_calculation.o
 release/dean_menu.o
+release/dean_menu_D.o
+release/dean_menu_D1.o
+release/dean_menu_nu.o
+release/dean_menu_p.o
+release/dean_menu_r.o
+release/dean_menu_v.o
 release/diagram_window.o
 release/draw_de_d.o
 release/draw_de_nu.o
@@ -15,6 +21,12 @@ release/qrc_image.o
 release/qrc_qmake_qmake_qm_files.o
 release/moc_dean_flow_calculation.o
 release/moc_dean_menu.o
+release/moc_dean_menu_D.o
+release/moc_dean_menu_D1.o
+release/moc_dean_menu_nu.o
+release/moc_dean_menu_p.o
+release/moc_dean_menu_r.o
+release/moc_dean_menu_v.o
 release/moc_diagram_window.o
 release/moc_draw_de_d.o
 release/moc_draw_de_nu.o

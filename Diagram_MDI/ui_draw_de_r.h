@@ -23,9 +23,9 @@ class Ui_Draw_De_r
 {
 public:
     QGridLayout *gridLayout;
-    QCustomPlot *De_r_graph;
     QPushButton *Save;
     QSpacerItem *horizontalSpacer;
+    QCustomPlot *De_r_graph;
 
     void setupUi(QWidget *Draw_De_r)
     {
@@ -34,11 +34,6 @@ public:
         Draw_De_r->resize(400, 300);
         gridLayout = new QGridLayout(Draw_De_r);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        De_r_graph = new QCustomPlot(Draw_De_r);
-        De_r_graph->setObjectName(QString::fromUtf8("De_r_graph"));
-
-        gridLayout->addWidget(De_r_graph, 1, 0, 1, 1);
-
         Save = new QPushButton(Draw_De_r);
         Save->setObjectName(QString::fromUtf8("Save"));
 
@@ -47,6 +42,11 @@ public:
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout->addItem(horizontalSpacer, 0, 1, 1, 1);
+
+        De_r_graph = new QCustomPlot(Draw_De_r);
+        De_r_graph->setObjectName(QString::fromUtf8("De_r_graph"));
+
+        gridLayout->addWidget(De_r_graph, 1, 0, 1, 2);
 
 
         retranslateUi(Draw_De_r);

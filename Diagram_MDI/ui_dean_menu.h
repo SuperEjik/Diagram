@@ -34,7 +34,6 @@ public:
     QLineEdit *lineEdit_D_x1;
     QLabel *label_p;
     QLineEdit *lineEdit_r_x1;
-    QPushButton *add_parametrs_to_all_graphs_Dean;
     QPushButton *Value_delete;
     QPushButton *add_parametrs_to_the_corresponding_graph_Dean;
     QLabel *label;
@@ -56,7 +55,7 @@ public:
     {
         if (dean_menu->objectName().isEmpty())
             dean_menu->setObjectName(QString::fromUtf8("dean_menu"));
-        dean_menu->resize(186, 446);
+        dean_menu->resize(186, 390);
         lineEdit_v_x1 = new QLineEdit(dean_menu);
         lineEdit_v_x1->setObjectName(QString::fromUtf8("lineEdit_v_x1"));
         lineEdit_v_x1->setGeometry(QRect(49, 104, 50, 27));
@@ -121,15 +120,11 @@ public:
         lineEdit_r_x1->setObjectName(QString::fromUtf8("lineEdit_r_x1"));
         lineEdit_r_x1->setGeometry(QRect(49, 170, 50, 27));
         lineEdit_r_x1->setFont(font);
-        add_parametrs_to_all_graphs_Dean = new QPushButton(dean_menu);
-        add_parametrs_to_all_graphs_Dean->setObjectName(QString::fromUtf8("add_parametrs_to_all_graphs_Dean"));
-        add_parametrs_to_all_graphs_Dean->setGeometry(QRect(9, 360, 171, 41));
-        QFont font4;
-        font4.setPointSize(9);
-        add_parametrs_to_all_graphs_Dean->setFont(font4);
         Value_delete = new QPushButton(dean_menu);
         Value_delete->setObjectName(QString::fromUtf8("Value_delete"));
-        Value_delete->setGeometry(QRect(9, 410, 171, 23));
+        Value_delete->setGeometry(QRect(9, 360, 171, 23));
+        QFont font4;
+        font4.setPointSize(9);
         Value_delete->setFont(font4);
         add_parametrs_to_the_corresponding_graph_Dean = new QPushButton(dean_menu);
         add_parametrs_to_the_corresponding_graph_Dean->setObjectName(QString::fromUtf8("add_parametrs_to_the_corresponding_graph_Dean"));
@@ -224,8 +219,6 @@ public:
 #if QT_CONFIG(tooltip)
         lineEdit_r_x1->setToolTip(QCoreApplication::translate("dean_menu", "<html><head/><body><p>\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \321\207\320\270\321\201\320\273\320\276 \320\276\321\202 1000,00 \320\264\320\276 5000,00</p></body></html>", nullptr));
 #endif // QT_CONFIG(tooltip)
-        add_parametrs_to_all_graphs_Dean->setText(QCoreApplication::translate("dean_menu", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213 \320\262\320\276 \320\262\321\201\320\265 \n"
-"  \320\263\321\200\320\260\321\204\320\270\320\272\320\270", nullptr));
         Value_delete->setText(QCoreApplication::translate("dean_menu", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\267\320\275\320\260\321\207\320\265\320\275\320\270\321\217", nullptr));
         add_parametrs_to_the_corresponding_graph_Dean->setText(QCoreApplication::translate("dean_menu", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213 \320\262 \n"
 " \321\201\320\276\320\276\321\202\320\262\320\265\321\202\321\201\321\202\320\262\321\203\321\216\321\211\320\270\320\271 \n"

@@ -5,6 +5,12 @@
 
 #include "dean_flow_calculation.h"
 #include "dean_menu.h"
+#include "dean_menu_D.h"
+#include "dean_menu_nu.h"
+#include "dean_menu_p.h"
+#include "dean_menu_r.h"
+#include "dean_menu_v.h"
+#include "dean_menu_D1.h"
 #include <QMdiArea>
 #include <string.h>
 #include <QPointer>
@@ -27,6 +33,8 @@ class Draw_De_v;
 
 class inductance_menu;
 class dean_menu;
+class dean_menu_D;
+class dean_menu_D1;
 
 class MainWindow : public QMainWindow
 {
@@ -72,6 +80,12 @@ private:
 
     QPointer<inductance_menu> inductance_m;
     QPointer<dean_menu> dean_m;
+    QPointer<dean_menu> dean_m_D;
+    QPointer<dean_menu> dean_m_D1;
+    QPointer<dean_menu> dean_m_nu;
+    QPointer<dean_menu> dean_m_p;
+    QPointer<dean_menu> dean_m_r;
+    QPointer<dean_menu> dean_m_v;
 
     void loadSubWindows(QWidget *widget);
 
@@ -81,5 +95,6 @@ signals:
 private slots:
     void on_actTile_triggered();
     void on_save_graph_triggered();
+    void on_actionmenu_test_triggered();
 };
 #endif // MAINWINDOW_H

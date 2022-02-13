@@ -12,6 +12,12 @@ SOURCES += \
     calculation.cpp \
     dean_flow_calculation.cpp \
     dean_menu.cpp \
+    dean_menu_D.cpp \
+    dean_menu_D1.cpp \
+    dean_menu_nu.cpp \
+    dean_menu_p.cpp \
+    dean_menu_r.cpp \
+    dean_menu_v.cpp \
     diagram_window.cpp \
     draw_de_d.cpp \
     draw_de_nu.cpp \
@@ -27,6 +33,12 @@ HEADERS += \
     calculation.h \
     dean_flow_calculation.h \
     dean_menu.h \
+    dean_menu_D.h \
+    dean_menu_D1.h \
+    dean_menu_nu.h \
+    dean_menu_p.h \
+    dean_menu_r.h \
+    dean_menu_v.h \
     diagram_window.h \
     draw_de_d.h \
     draw_de_nu.h \
@@ -40,6 +52,12 @@ HEADERS += \
 FORMS += \
     dean_flow_calculation.ui \
     dean_menu.ui \
+    dean_menu_D.ui \
+    dean_menu_D1.ui \
+    dean_menu_nu.ui \
+    dean_menu_p.ui \
+    dean_menu_r.ui \
+    dean_menu_v.ui \
     diagram_window.ui \
     draw_de_d.ui \
     draw_de_nu.ui \

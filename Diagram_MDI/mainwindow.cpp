@@ -20,6 +20,12 @@ MainWindow::MainWindow(QWidget *parent)
     Dean_flow_tab = false;
 
     dean_m = new dean_menu();
+    dean_m_D = new dean_menu_D();
+    dean_m_D1 = new dean_menu_D1();
+    dean_m_nu = new dean_menu_nu();
+    dean_m_p = new dean_menu_p();
+    dean_m_r = new dean_menu_r();
+    dean_m_v = new dean_menu_v();
 
     X = 0;
     //this->setWindowIcon(QPixmap(":/resource/pic/lable_ipu.png"));
@@ -47,10 +53,37 @@ void MainWindow::add_tab_and_grapf()
     {
         Y_axis_name = "De";
 
-        if(Dean_flow_tab == false)
+        /*if(Dean_flow_tab == false)//добавление в таб меню
         {
             Dean_flow_tab = true;
-            ui->tabWidget->addTab(dean_m, "Число Дина");
+            //ui->tabWidget->addTab(dean_m, "Число Дина");
+            ui->tabWidget->addTab(dean_m_D, "De_d");
+        }*/
+
+        if(button == ui->actionDe_D)//добавление в таб меню
+        {
+            //ui->tabWidget->addTab(dean_m, "Число Дина");
+            ui->tabWidget->addTab(dean_m_D, "De(D)");
+        }
+
+        if(button == ui->actionDe_p)//добавление в таб меню
+        {
+            ui->tabWidget->addTab(dean_m_p, "De(p)");
+        }
+
+        if(button == ui->actionDe_r)//добавление в таб меню
+        {
+            ui->tabWidget->addTab(dean_m_r, "De(r)");
+        }
+
+        if(button == ui->actionDe_v)//добавление в таб меню
+        {
+            ui->tabWidget->addTab(dean_m_v, "De(v)");
+        }
+
+        if(button == ui->actionDe_nu)//добавление в таб меню
+        {
+            ui->tabWidget->addTab(dean_m_nu, "De(nu)");
         }
 
         if(first_tab == true)
@@ -226,6 +259,12 @@ void MainWindow::on_save_graph_triggered()
         //wGraphic->savePng(fileName);
     }*/
 
+
+}
+
+
+void MainWindow::on_actionmenu_test_triggered()
+{
 
 }
 

@@ -43,6 +43,7 @@ public:
     QAction *actTile;
     QAction *actionL_N;
     QAction *save_graph;
+    QAction *actionmenu_test;
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QTabWidget *tabWidget;
@@ -100,6 +101,8 @@ public:
         actionL_N->setObjectName(QString::fromUtf8("actionL_N"));
         save_graph = new QAction(MainWindow);
         save_graph->setObjectName(QString::fromUtf8("save_graph"));
+        actionmenu_test = new QAction(MainWindow);
+        actionmenu_test->setObjectName(QString::fromUtf8("actionmenu_test"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         centralwidget->setEnabled(true);
@@ -187,6 +190,7 @@ public:
         actTile->setText(QCoreApplication::translate("MainWindow", "\320\237\320\273\320\270\321\202\320\272\320\260", nullptr));
         actionL_N->setText(QCoreApplication::translate("MainWindow", "L \320\276\321\202 N", nullptr));
         save_graph->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272", nullptr));
+        actionmenu_test->setText(QCoreApplication::translate("MainWindow", "menu_test", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab1), QString());
         Graph->setTitle(QCoreApplication::translate("MainWindow", "\320\223\321\200\320\260\321\204\320\270\320\272", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\263\321\200\320\260\321\204\320\270\320\272 \321\207\320\270\321\201\320\273\320\260 \320\224\320\270\320\275\320\260", nullptr));

@@ -22,6 +22,7 @@ public:
     Calculation c;
     void value_calculate();
     void new_values();
+    void value_enter();
 
 
 signals:

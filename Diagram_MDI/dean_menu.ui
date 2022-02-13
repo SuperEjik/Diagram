@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>186</width>
-    <height>446</height>
+    <height>390</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -252,30 +252,11 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введите число от 1000,00 до 5000,00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="add_parametrs_to_all_graphs_Dean">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>360</y>
-     <width>171</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Добавить параметры во все 
-  графики</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Value_delete">
    <property name="geometry">
     <rect>
      <x>9</x>
-     <y>410</y>
+     <y>360</y>
      <width>171</width>
      <height>23</height>
     </rect>

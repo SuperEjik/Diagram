@@ -9,8 +9,9 @@ dean_menu::dean_menu(QWidget *parent) :
     ui(new Ui::dean_menu)
 {
     ui->setupUi(this);
+    value_enter();
 
-    D1 = 0;
+    /*D1 = 0;
     nu1 = 0;
     p1 = 0;
     r1 = 0;
@@ -35,12 +36,42 @@ dean_menu::dean_menu(QWidget *parent) :
     ui->lineEdit_D_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
     ui->lineEdit_v_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
     ui->lineEdit_nu_De_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
-    ui->lineEdit_r_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+    ui->lineEdit_r_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));*/
 }
 
 dean_menu::~dean_menu()
 {
     delete ui;
+}
+
+void dean_menu::value_enter()
+{
+    D1 = 0;
+        nu1 = 0;
+        p1 = 0;
+        r1 = 0;
+        v1 = 0;
+
+        D2 = 0;
+        nu2 = 0;
+        p2 = 0;
+        r2 = 0;
+        v2 = 0;
+
+        number_y1 = 0;
+        number_y2 = 0;
+
+        ui->lineEdit_p_x1->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_D_x1->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_v_x1->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_nu_De_x1->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_r_x1->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+
+        ui->lineEdit_p_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_D_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_v_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_nu_De_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
+        ui->lineEdit_r_x2->setValidator(new QRegExpValidator(QRegExp("((5[0][0][0])||([1-4][0-9]{3}(,)[0-9]{10}))"), this));
 }
 
 void dean_menu::value_calculate()

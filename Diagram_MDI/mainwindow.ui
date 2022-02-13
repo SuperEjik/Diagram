@@ -201,6 +201,11 @@
     <string>Сохранить график</string>
    </property>
   </action>
+  <action name="actionmenu_test">
+   <property name="text">
+    <string>menu_test</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
