@@ -33,12 +33,12 @@
     <property name="title">
      <string>Файл</string>
     </property>
-    <addaction name="action_1"/>
+    <addaction name="action_open"/>
    </widget>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="action_1">
+  <action name="action_open">
    <property name="text">
     <string>Открыть</string>
    </property>
